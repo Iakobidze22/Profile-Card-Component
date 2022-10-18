@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylsheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./image1234.png/" />
+    <title>profile-card-component</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      font-family: "Kumbh Sans", sans-serif;
+      width: 326px;
+      height: 374px;
+      background: #ffffff;
+      box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+      border-radius: 15px;
+      margin: 0 auto;
+      display: block;
+      align-items: center;
+    }
+    body {
+      background-color: #19a1ae;
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
+      background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: calc(-46vw + 100%) calc(-34vh + 100%), 45vw 45vh;
+    }
+    .topimage {
+      max-width: 100%;
+      border-radius: 15px 15px 0px 0px;
+    }
+    .victorimage {
+      width: 100px;
+      height: 100px;
+      outline: 5px solid #ffffff;
+      border-radius: 50%;
+      margin-top: -48px;
+      display: block;
+      margin-left: 110px;
+    }
+    .name1 {
+      font-family: "Kumbh Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #2e3349;
+    }
+    .age {
+      font-family: "Kumbh Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: #6b7082;
+      margin-left: 8.5px;
+    }
+    .nameage {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+    }
+    .London {
+      font-family: "Kumbh Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #6b7082;
+      margin-top: 13px;
+    }
+    .line {
+      height: 1px;
+      background: #e8e9ec;
+      margin-top: 28px;
+    }
+    .amount {
+      font-family: "Kumbh Sans";
+      margin-top: 24px;
+      color: #2e3349;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .bottomtext {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 9px;
+      font-family: "Kumbh Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      text-align: center;
+      letter-spacing: 1.5px;
+      color: #6b7082;
+    }
+    .Followers {
+      margin-left: -5px;
+    }
+    .likes {
+      margin-left: -18px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <img src="./bg-pattern-card.svg" class="topimage" />
+      <img src="./image-victor.jpg" class="victorimage" />
+      <div class="nameage">
+        <span class="name1">
+          Victor Crest
+        </span>
+        <span class="age">
+          26
+        </span>
+      </div>
+      <h1 class="London">
+        London
+      </h1>
+      <div class="line"></div>
+      <div class="amount">
+        <span>
+          80k
+        </span>
+        <span>
+          803k
+        </span>
+        <span>
+          1.4k
+        </span>
+      </div>
+      <div class="bottomtext">
+        <span class="Followers">
+          Followers
+        </span>
+        <span class="likes">
+          Likes
+        </span>
+        <span>
+          Photos
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
